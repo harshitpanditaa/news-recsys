@@ -1,0 +1,41 @@
+{
+  "model": {
+    "AUC": 0.6080533058555416,
+    "MRR": 0.28324521270695413,
+    "nDCG@5": 0.31097110977604864,
+    "nDCG@10": 0.36922870934976815,
+    "HitRate@5": 0.5230889107611548,
+    "impressions_evaluated": 73152,
+    "global_ROC_AUC": 0.6775460956949495,
+    "best_f1_threshold": {
+      "threshold": 0.45,
+      "precision": 0.11809375747428845,
+      "recall": 0.2127793289819811,
+      "f1": 0.15188851255002866,
+      "tp": 23700,
+      "fp": 176988,
+      "fn": 87683
+    }
+  },
+  "baseline_most_shown": {
+    "AUC": 0.5281393450493965,
+    "MRR": 0.2685744167043644,
+    "nDCG@5": 0.2806780844146313,
+    "nDCG@10": 0.3412541633539899,
+    "HitRate@5": 0.4518946850393701,
+    "impressions_evaluated": 73152
+  },
+  "baseline_random": {
+    "AUC": 0.4994915271193991,
+    "MRR": 0.2185728372601929,
+    "nDCG@5": 0.22332834027433066,
+    "nDCG@10": 0.28572479973362475,
+    "HitRate@5": 0.389080271216098,
+    "impressions_evaluated": 73152
+  },
+  "fresh_recommendations": {
+    "users": 5000,
+    "fresh_articles": 471,
+    "recency_half_life_hours": 24.0
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "users": 94057,
+  "impressions": 8584442,
+  "clicks": 347727,
+  "sessions": 230117,
+  "articles_mind": 65238,
+  "articles_guardian": 471,
+  "ctr": 0.04050665145154455,
+  "last_ingestion_manifest": {
+    "mind": [
+      {
+        "source": "MIND-small",
+        "source_type": "file (TSV)",
+        "split": "train",
+        "file": "/content/news-recsys/data/landing/mind/train/news.tsv",
+        "source_url": null,
+        "bytes": 41202121,
+        "rows": 51282,
+        "md5": "55125b920439b218b97e7258ec8669f6",
+        "ingested_at_utc": "2026-10-15T14:48:04.798852+00:00"
+      },
+      {
+        "source": "MIND-small",
+        "source_type": "file (TSV)",
+        "split": "train",
+        "file": "/content/news-recsys/data/landing/mind/train/behaviors.tsv",
+        "source_url": null,
+        "bytes": 92019716,
+        "rows": 156965,
+        "md5": "01d4097af573bfb1bc97dc0150b93fa4",
+        "ingested_at_utc": "2026-10-15T14:48:06.426856+00:00"
+      },
+      {
+        "source": "MIND-small",
+        "source_type": "file (TSV)",
+        "split": "dev",
+        "file": "/content/news-recsys/data/landing/mind/dev/news.tsv",
+        "source_url": null,
+        "bytes": 33519092,
+        "rows": 42416,
+        "md5": "b07fe4809780c7dedc0f8c69e6a7d199",
+        "ingested_at_utc": "2026-10-15T14:48:06.952804+00:00"
+      },
+      {
+        "source": "MIND-small",
+        "source_type": "file (TSV)",
+        "split": "dev",
+        "file": "/content/news-recsys/data/landing/mind/dev/behaviors.tsv",
+        "source_url": null,
+        "bytes": 42838544,
+        "rows": 73152,
+        "md5": "1ee4676aa8bb3ba171d71a3c24d8029e",
+        "ingested_at_utc": "2026-10-15T14:48:07.589105+00:00"
+      }
+    ],
+    "guardian": [
+      {
+        "source": "The Guardian Open Platform",
+        "source_type": "REST API (JSON)",
+        "run_id": "20261015T144807Z",
+        "endpoint": "https://content.guardianapis.com/search",
+        "from_date": "2026-10-12",
+        "pages": [
+          {
+            "page": 1,
+            "file": "/content/news-recsys/data/landing/guardian/run=20261015T144807Z/page_001.json",
+            "articles": 50,
+            "md5": "3a0bcac6e333f8fea7372e28039ba09c"
+          },
+          {
+            "page": 2,
+            "file": "/content/news-recsys/data/landing/guardian/run=20261015T144807Z/page_002.json",
+            "articles": 50,
+            "md5": "c6589ddd9466fa07c72a7bda06696db7"
+          },
+          {
+            "page": 3,
+            "file": "/content/news-recsys/data/landing/guardian/run=20261015T144807Z/page_003.json",
+            "articles": 50,
+            "md5": "ba31db3e6e89e7c04710a20fe3b8868f"
+          },
+          {
+            "page": 4,
+            "file": "/content/news-recsys/data/landing/guardian/run=20261015T144807Z/page_004.json",
+            "articles": 50,
+            "md5": "54793b192e8444b2c9b1ab69e32224e4"
+          },
+          {
+            "page": 5,
+            "file": "/content/news-recsys/data/landing/guardian/run=20261015T144807Z/page_005.json",
+            "articles": 50,
+            "md5": "6ad641a160976649f7ef12cfdd8faec2"
+          },
+          {
+            "page": 6,
+            "file": "/content/news-recsys/data/landing/guardian/run=20261015T144807Z/page_006.json",
+            "articles": 50,
+            "md5": "b0437537777987eabb28cce895e29c8e"
+          },
+          {
+            "page": 7,
+            "file": "/content/news-recsys/data/landing/guardian/run=20261015T144807Z/page_007.json",
+            "articles": 50,
+            "md5": "98d9eb1e569ded93e5680e9c0ed14d27"
+          },
+          {
+            "page": 8,
+            "file": "/content/news-recsys/data/landing/guardian/run=20261015T144807Z/page_008.json",
+            "articles": 50,
+            "md5": "16d447492743c5543f3e64b0ec948559"
+          },
+          {
+            "page": 9,
+            "file": "/content/news-recsys/data/landing/guardian/run=20261015T144807Z/page_009.json",
+            "articles": 50,
+            "md5": "7117465e540bc22ace2b35a5777f30e0"
+          },
+          {
+            "page": 10,
+            "file": "/content/news-recsys/data/landing/guardian/run=20261015T144807Z/page_010.json",
+            "articles": 50,
+            "md5": "b2d8bd193796fb65c53ffff861cdfa1b"
+          }
+        ],
+        "articles": 500,
+        "ingested_at_utc": "2026-10-15T14:48:23.447967+00:00"
+      }
+    ]
+  },
+  "exported_at_utc": "2026-10-15T15:13:53.483439+00:00"
+}

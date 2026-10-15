@@ -1,0 +1,134 @@
+{
+  "click_models": {
+    "logistic_regression": {
+      "dev_auc": 0.6680086041654434,
+      "dev_auc_pr": 0.08732049132911691
+    },
+    "gbt": {
+      "dev_auc": 0.6775478927197012,
+      "dev_auc_pr": 0.08901953612289386
+    }
+  },
+  "best_click_model": "gbt",
+  "train_rows_sampled": 1182593,
+  "train_clicks": 236344,
+  "train_nonclicks": 5607100,
+  "dev_rows": 2740998,
+  "logreg_coefficients": [
+    [
+      "log_times_shown",
+      0.3035526427425554
+    ],
+    [
+      "subcat_affinity",
+      0.2416524002899116
+    ],
+    [
+      "user_cat_affinity",
+      0.15461503539830412
+    ],
+    [
+      "log_hist_len",
+      0.0917987105537468
+    ],
+    [
+      "title_len",
+      0.08791598449338359
+    ],
+    [
+      "cold_user",
+      0.07744522238882293
+    ],
+    [
+      "log_hist_users",
+      -0.07550851251452136
+    ],
+    [
+      "category_ctr",
+      0.07461566252312397
+    ],
+    [
+      "is_top_category",
+      0.07416272380089645
+    ],
+    [
+      "is_weekend",
+      0.05446308150177957
+    ],
+    [
+      "abstract_len",
+      -0.050231776379062974
+    ],
+    [
+      "event_hour",
+      -0.0013639393334874085
+    ]
+  ],
+  "gbt_feature_importance": [
+    [
+      "log_times_shown",
+      0.22113230855718186
+    ],
+    [
+      "abstract_len",
+      0.13529450777953567
+    ],
+    [
+      "subcat_affinity",
+      0.09914567697119632
+    ],
+    [
+      "title_len",
+      0.09482068819200297
+    ],
+    [
+      "category_ctr",
+      0.08823228333054879
+    ],
+    [
+      "user_cat_affinity",
+      0.07856351580547322
+    ],
+    [
+      "log_hist_len",
+      0.06519322341417176
+    ],
+    [
+      "log_hist_users",
+      0.055117853349062315
+    ],
+    [
+      "is_weekend",
+      0.034859577106677135
+    ],
+    [
+      "event_hour",
+      0.019497664621759576
+    ],
+    [
+      "is_top_category",
+      0.0025542262811742568
+    ],
+    [
+      "cold_user",
+      0.00039910494405501917
+    ]
+  ],
+  "cold_start_model_dev_auc": 0.633927167119001,
+  "kmeans_silhouette_by_k": {
+    "4": 0.25415929882543664,
+    "5": 0.24869938918417434,
+    "6": 0.2868505500953969,
+    "7": 0.25567926253105017,
+    "8": 0.22234391154459873
+  },
+  "kmeans_best_k": 6,
+  "segment_names": {
+    "0": "news (38%) + lifestyle (9%)",
+    "1": "lifestyle (21%) + tv (15%)",
+    "2": "sports (63%) + news (10%)",
+    "3": "sports (31%) + news (23%)",
+    "4": "news (70%) + sports (6%)",
+    "5": "health (31%) + news (14%)"
+  }
+}

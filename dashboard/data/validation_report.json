@@ -1,0 +1,158 @@
+{
+  "validated_at_utc": "2026-10-15T15:12:58.837235+00:00",
+  "passed": 30,
+  "total": 30,
+  "all_passed": true,
+  "checks": [
+    {
+      "check": "bronze/mind_news exists and is non-empty",
+      "passed": true,
+      "detail": "93,698 rows"
+    },
+    {
+      "check": "bronze/mind_behaviors exists and is non-empty",
+      "passed": true,
+      "detail": "230,117 rows"
+    },
+    {
+      "check": "silver/news exists and is non-empty",
+      "passed": true,
+      "detail": "65,238 rows"
+    },
+    {
+      "check": "silver/behaviors exists and is non-empty",
+      "passed": true,
+      "detail": "230,117 rows"
+    },
+    {
+      "check": "silver/impressions exists and is non-empty",
+      "passed": true,
+      "detail": "8,584,442 rows"
+    },
+    {
+      "check": "silver/user_history exists and is non-empty",
+      "passed": true,
+      "detail": "2,174,591 rows"
+    },
+    {
+      "check": "silver/articles exists and is non-empty",
+      "passed": true,
+      "detail": "65,709 rows"
+    },
+    {
+      "check": "silver/_dq_report exists and is non-empty",
+      "passed": true,
+      "detail": "14 rows"
+    },
+    {
+      "check": "gold/daily_kpis exists and is non-empty",
+      "passed": true,
+      "detail": "7 rows"
+    },
+    {
+      "check": "gold/category_kpis exists and is non-empty",
+      "passed": true,
+      "detail": "16 rows"
+    },
+    {
+      "check": "gold/hourly_trends exists and is non-empty",
+      "passed": true,
+      "detail": "2,431 rows"
+    },
+    {
+      "check": "gold/news_popularity exists and is non-empty",
+      "passed": true,
+      "detail": "65,238 rows"
+    },
+    {
+      "check": "gold/user_profile exists and is non-empty",
+      "passed": true,
+      "detail": "94,057 rows"
+    },
+    {
+      "check": "gold/user_interest_matrix exists and is non-empty",
+      "passed": true,
+      "detail": "91,935 rows"
+    },
+    {
+      "check": "gold/ml_features exists and is non-empty",
+      "passed": true,
+      "detail": "8,584,442 rows"
+    },
+    {
+      "check": "gold/user_segments exists and is non-empty",
+      "passed": true,
+      "detail": "91,935 rows"
+    },
+    {
+      "check": "output/predictions_dev exists and is non-empty",
+      "passed": true,
+      "detail": "2,740,998 rows"
+    },
+    {
+      "check": "output/recommendations_dev_top10 exists and is non-empty",
+      "passed": true,
+      "detail": "653,672 rows"
+    },
+    {
+      "check": "bronze keeps lineage metadata",
+      "passed": true,
+      "detail": "['_source', '_source_file', '_ingest_ts', '_batch_id', 'split']"
+    },
+    {
+      "check": "silver/news: news_id unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "silver/news: no null titles",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "silver/impressions: clicked is 0/1 only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "silver/impressions: event_ts typed as timestamp",
+      "passed": true,
+      "detail": "timestamp"
+    },
+    {
+      "check": "gold/ml_features reconciles with silver/impressions (1 row per impression)",
+      "passed": true,
+      "detail": "8,584,442 vs 8,584,442"
+    },
+    {
+      "check": "every dev impression got a prediction",
+      "passed": true,
+      "detail": "2,740,998 vs 2,740,998"
+    },
+    {
+      "check": "model saved: click_model",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "model saved: cold_start_model",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "model saved: user_kmeans",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "model beats random baseline on per-impression AUC",
+      "passed": true,
+      "detail": "0.6081 vs 0.4995"
+    },
+    {
+      "check": "model beats random baseline on nDCG@10",
+      "passed": true,
+      "detail": "0.3692 vs 0.2857"
+    }
+  ]
+}
